@@ -1,0 +1,72 @@
+Algoritmo rotina_matinal_cristao_reformado
+Var
+    horaAtual, escolhaLeitura, alimento : inteiro
+    textoBiblico : caractere
+Inicio
+    Escrever "O despertador toca."
+    
+    Repetir
+        Escrever "Abrindo os olhos..."
+        Esperar(1)
+    Ate Que acordado = verdadeiro
+
+    Escrever "Orar agradecendo a Deus pelo novo dia."
+
+    Escrever "Levantando da cama e indo para o banheiro."
+    Para i de 1 ate 3 faca
+        Se i = 1 Entao
+            Escrever "Lavando o rosto."
+        Senao Se i = 2 Entao
+            Escrever "Escovando os dentes."
+        Senao
+            Escrever "Arrumando o cabelo."
+        FimSe
+        Esperar(1)
+    FimPara
+
+    Escrever "Escolha uma passagem bíblica para o devocional:"
+    Escrever "1 - Salmos 23"
+    Escrever "2 - Provérbios 3:5-6"
+    Escrever "3 - Romanos 8:28"
+    Ler escolhaLeitura
+
+    Escolha escolhaLeitura
+        Caso 1:
+            textoBiblico <- "Salmos 23: O Senhor é o meu pastor e nada me faltará."
+        Caso 2:
+            textoBiblico <- "Provérbios 3:5-6: Confia no Senhor de todo o teu coração."
+        Caso 3:
+            textoBiblico <- "Romanos 8:28: Todas as coisas cooperam para o bem dos que amam a Deus."
+        Caso Contrario:
+            textoBiblico <- "Passagem não encontrada. Escolha válida na próxima vez."
+    FimEscolha
+
+    Escrever "Lendo: ", textoBiblico
+    Escrever "Refletindo sobre o texto e orando."
+
+    Escrever "Escolha seu café da manhã:"
+    Escrever "1 - Pão e café"
+    Escrever "2 - Frutas e suco"
+    Escrever "3 - Aveia e chá"
+    Ler alimento
+
+    Se alimento = 1 Entao
+        Escrever "Preparando pão e café..."
+    Senao Se alimento = 2 Entao
+        Escrever "Preparando frutas e suco..."
+    Senao Se alimento = 3 Entao
+        Escrever "Preparando aveia e chá..."
+    Senao
+        Escrever "Opção inválida. Tomando um copo de água."
+    FimSe
+    Escrever "Orando e agradecendo pelo alimento antes de comer."
+
+    Escrever "Verificando compromissos do dia..."
+    Para horaAtual de 8 ate 12 passo 2 faca
+        Escrever "Tarefa planejada para ", horaAtual, " horas."
+    FimPara
+
+    Escrever "Saindo para cumprir responsabilidades com fé e diligência."
+    Escrever "Mantendo um espírito de oração ao longo do dia."
+
+FimAlgoritmo
